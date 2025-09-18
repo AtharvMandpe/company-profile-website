@@ -1,0 +1,402 @@
+/* About Page Styles */
+.about-page {
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* About Hero */
+.about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Company Overview */
+.company-overview {
+  background: white;
+  padding: 6rem 0;
+}
+
+.overview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.overview-text h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.overview-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.overview-image {
+  text-align: center;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(52,152,219,0.3);
+}
+
+.placeholder-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.image-placeholder p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Mission Vision */
+.mission-vision {
+  background: #f8f9fa;
+  padding: 6rem 0;
+}
+
+.mv-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.mv-icon {
+  font-size: 4rem;
+  color: #3498db;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.mv-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mv-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Achievements */
+.achievements {
+  background: white;
+  padding: 6rem 0;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border-left: 4px solid #3498db;
+}
+
+.achievement-item:hover {
+  background: #e8f4f8;
+  transform: translateX(10px);
+}
+
+.achievement-year {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3498db;
+  min-width: 80px;
+  text-align: center;
+}
+
+.achievement-content h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.achievement-content p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Leadership */
+.leadership {
+  background: #f8f9fa;
+  padding: 6rem 0;
+}
+
+.leader-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.leader-image {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.leader-placeholder {
+  font-size: 3rem;
+  color: white;
+}
+
+.leader-card h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.leader-title {
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.leader-bio {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Why Choose */
+.why-choose {
+  background: white;
+  padding: 6rem 0;
+}
+
+.advantage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+  background: #e8f4f8;
+  transform: translateX(10px);
+}
+
+.advantage-icon {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.advantage-item h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.advantage-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.advantage-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(52,152,219,0.3);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat-box p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .overview-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievement-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .achievement-year {
+    min-width: auto;
+  }
+  
+  .advantage-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-box h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 4rem 0 3rem;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .mv-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .achievement-item {
+    padding: 1.5rem;
+  }
+  
+  .leader-card {
+    padding: 1.5rem;
+  }
+  
+  .leader-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .leader-placeholder {
+    font-size: 2.5rem;
+  }
+  
+  .advantage-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .advantage-icon {
+    margin-top: 0;
+  }
+}
+
