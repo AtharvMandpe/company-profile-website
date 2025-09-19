@@ -67,8 +67,7 @@ const Contact = () => {
               <h3>Visit Us</h3>
               <p>
                 OM Chemicals Pvt. Ltd.<br />
-                Industrial Area, Phase II<br />
-                Mumbai, Maharashtra 400001<br />
+                Lote, Parshuram<br />
                 India
               </p>
             </div>
@@ -76,8 +75,8 @@ const Contact = () => {
               <FontAwesomeIcon icon={faPhone} className="info-icon" />
               <h3>Call Us</h3>
               <p>
-                +91 22 1234 5678<br />
-                +91 22 8765 4321<br />
+                +91 9999999999<br />
+                +91 9999999999<br />
                 <span className="info-note">Mon-Fri: 9AM-6PM IST</span>
               </p>
             </div>
@@ -191,8 +190,7 @@ const Contact = () => {
                 <p>Interactive Map</p>
                 <p className="map-address">
                   OM Chemicals Pvt. Ltd.<br />
-                  Industrial Area, Phase II<br />
-                  Mumbai, Maharashtra 400001
+                  Lote Parshuram<br />
                 </p>
               </div>
             </div>
